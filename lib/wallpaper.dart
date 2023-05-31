@@ -1,13 +1,38 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+
+
 
 class Wallpaper extends StatefulWidget {
-  const Wallpaper({Key? key}) : super(key: key);
 
   @override
   State<Wallpaper> createState() => _WallpaperState();
 }
 
 class _WallpaperState extends State<Wallpaper> {
+
+  List images=[];
+  @override
+  void initState() {
+    fetchapi();
+    super.initState();
+  }
+
+  fetchapi() async {
+    await http.get(Uri.parse('https://api.pexels.com/v1/curated?per_page=80'),
+        headers: {
+          'Authorization':
+          'QeCOcPVzF78W9dpDeUJjjF4pOqI1q3HQ6RIbGyCIyh8EFbD1gDUV1KWc'
+        }).then((value) {
+          Map result= jsonDecode(value.body);
+          setState(() {
+            images=result['photos'];
+          });
+          print("joy $images");
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
