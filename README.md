@@ -1,16 +1,6 @@
 # pixel_wallpaper
 
-A Wallpaper App learning from Akshit Madan YouTube channel
+Created Wallpaper App using Pixel API from [Aksit Madan](https://www.youtube.com/@AkshitMadan/featured) YouTube channel
 
-## Getting Started
+<img src="https://github.com/PurnenduSamanta/WallpaperApp/assets/69786552/c4197335-d262-4e40-a890-1db1c940225e" width="250" height="500" /><img src="https://github.com/PurnenduSamanta/WallpaperApp/assets/69786552/44c7f1de-e690-4ba2-b978-d60c87d4b9a1" width="250" height="500" hspace="20"/>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
